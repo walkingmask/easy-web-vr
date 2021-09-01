@@ -1,4 +1,4 @@
-<!-- From https://aframe.io/docs/1.2.0/components/camera.html -->
+<!-- From https://aframe.io/docs/1.2.0/components/laser-controls.html -->
 <html>
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
@@ -9,8 +9,8 @@
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-sky color="black"></a-sky>
-      <a-entity oculus-touch-controls="hand: left"></a-entity>
-      <a-entity oculus-touch-controls="hand: right"></a-entity>
+      <a-entity oculus-touch-controls="hand: left" laser-controls="hand: left"></a-entity>
+      <a-entity oculus-touch-controls="hand: right" laser-controls="hand: right"></a-entity>
       <a-entity id="camera-rig" position="10 1.6 10">
         <a-entity id="camera" camera look-controls></a-entity>
       </a-entity>
