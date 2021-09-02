@@ -1,5 +1,4 @@
 <!-- From https://aframe.io/docs/1.2.0/components/laser-controls.html -->
-<!-- Ref https://qiita.com/ysd_marrrr/items/249533f4b37d34db147d -->
 <html>
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
@@ -10,8 +9,8 @@
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-sky color="black"></a-sky>
-      <a-entity id="controller-left" laser-controls="hand: left" raycaster="showLine: true"></a-entity>
-      <a-entity id="controller-right" laser-controls="hand: right" raycaster="showLine: true"></a-entity>
+      <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .collidable"></a-entity>
+      <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .collidable"></a-entity>
     </a-scene>
   </body>
 </html>
